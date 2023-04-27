@@ -12,6 +12,15 @@
 		91E17AF029F8F0BA000CFA16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17AEF29F8F0BA000CFA16 /* HomeViewController.swift */; };
 		91E17AF529F8F0BD000CFA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E17AF429F8F0BD000CFA16 /* Assets.xcassets */; };
 		91E17AF829F8F0BD000CFA16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E17AF629F8F0BD000CFA16 /* LaunchScreen.storyboard */; };
+		91E17B0029F8F511000CFA16 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17AFF29F8F511000CFA16 /* HomeView.swift */; };
+		91E17B0229F8F525000CFA16 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B0129F8F525000CFA16 /* BaseUIView.swift */; };
+		91E17B0529F8F54A000CFA16 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91E17B0429F8F54A000CFA16 /* SnapKit */; };
+		91E17B0829F8F566000CFA16 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B0729F8F566000CFA16 /* UIView+Extension.swift */; };
+		91E17B0A29F8F577000CFA16 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B0929F8F577000CFA16 /* UITextField+Extension.swift */; };
+		91E17B1129F8F88C000CFA16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B1029F8F88C000CFA16 /* HomeViewModel.swift */; };
+		91E17B1329F90265000CFA16 /* HomeViewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B1229F90265000CFA16 /* HomeViewUseCase.swift */; };
+		91E17B1B29FA86CC000CFA16 /* CalculateTpyeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B1A29FA86CC000CFA16 /* CalculateTpyeModel.swift */; };
+		91E17B1D29FA86E6000CFA16 /* CalculatorResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E17B1C29FA86E6000CFA16 /* CalculatorResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,14 @@
 		91E17AF429F8F0BD000CFA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E17AF729F8F0BD000CFA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E17AF929F8F0BD000CFA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E17AFF29F8F511000CFA16 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		91E17B0129F8F525000CFA16 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		91E17B0729F8F566000CFA16 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		91E17B0929F8F577000CFA16 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		91E17B1029F8F88C000CFA16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		91E17B1229F90265000CFA16 /* HomeViewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewUseCase.swift; sourceTree = "<group>"; };
+		91E17B1A29FA86CC000CFA16 /* CalculateTpyeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTpyeModel.swift; sourceTree = "<group>"; };
+		91E17B1C29FA86E6000CFA16 /* CalculatorResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E17B0529F8F54A000CFA16 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +72,94 @@
 		91E17AEA29F8F0BA000CFA16 /* YourssuCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				91E17AEB29F8F0BA000CFA16 /* AppDelegate.swift */,
-				91E17AED29F8F0BA000CFA16 /* SceneDelegate.swift */,
-				91E17AEF29F8F0BA000CFA16 /* HomeViewController.swift */,
-				91E17AF429F8F0BD000CFA16 /* Assets.xcassets */,
-				91E17AF629F8F0BD000CFA16 /* LaunchScreen.storyboard */,
-				91E17AF929F8F0BD000CFA16 /* Info.plist */,
+				91E17B1E29FA8711000CFA16 /* Domain */,
+				91E17B0B29F8F58D000CFA16 /* Presentation */,
+				91E17B0D29F8F5B2000CFA16 /* Global */,
 			);
 			path = YourssuCalculator;
+			sourceTree = "<group>";
+		};
+		91E17B0629F8F554000CFA16 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B0729F8F566000CFA16 /* UIView+Extension.swift */,
+				91E17B0929F8F577000CFA16 /* UITextField+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		91E17B0B29F8F58D000CFA16 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B0C29F8F59B000CFA16 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		91E17B0C29F8F59B000CFA16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				91E17AFF29F8F511000CFA16 /* HomeView.swift */,
+				91E17AEF29F8F0BA000CFA16 /* HomeViewController.swift */,
+				91E17B1029F8F88C000CFA16 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		91E17B0D29F8F5B2000CFA16 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B0E29F8F5C3000CFA16 /* BaseView */,
+				91E17B0629F8F554000CFA16 /* Extension */,
+				91E17B0F29F8F5DF000CFA16 /* Supports */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		91E17B0E29F8F5C3000CFA16 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B0129F8F525000CFA16 /* BaseUIView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		91E17B0F29F8F5DF000CFA16 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				91E17AF929F8F0BD000CFA16 /* Info.plist */,
+				91E17AF429F8F0BD000CFA16 /* Assets.xcassets */,
+				91E17AF629F8F0BD000CFA16 /* LaunchScreen.storyboard */,
+				91E17AED29F8F0BA000CFA16 /* SceneDelegate.swift */,
+				91E17AEB29F8F0BA000CFA16 /* AppDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		91E17B1E29FA8711000CFA16 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B1F29FA872A000CFA16 /* Model */,
+				91E17B2029FA8734000CFA16 /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		91E17B1F29FA872A000CFA16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B1A29FA86CC000CFA16 /* CalculateTpyeModel.swift */,
+				91E17B1C29FA86E6000CFA16 /* CalculatorResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91E17B2029FA8734000CFA16 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B1229F90265000CFA16 /* HomeViewUseCase.swift */,
+			);
+			path = Usecase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +178,9 @@
 			dependencies = (
 			);
 			name = YourssuCalculator;
+			packageProductDependencies = (
+				91E17B0429F8F54A000CFA16 /* SnapKit */,
+			);
 			productName = YourssuCalculator;
 			productReference = 91E17AE829F8F0BA000CFA16 /* YourssuCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +209,9 @@
 				Base,
 			);
 			mainGroup = 91E17ADF29F8F0BA000CFA16;
+			packageReferences = (
+				91E17B0329F8F54A000CFA16 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 91E17AE929F8F0BA000CFA16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,8 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E17B0829F8F566000CFA16 /* UIView+Extension.swift in Sources */,
+				91E17B1D29FA86E6000CFA16 /* CalculatorResultModel.swift in Sources */,
+				91E17B0229F8F525000CFA16 /* BaseUIView.swift in Sources */,
+				91E17B0A29F8F577000CFA16 /* UITextField+Extension.swift in Sources */,
+				91E17B1129F8F88C000CFA16 /* HomeViewModel.swift in Sources */,
+				91E17B1329F90265000CFA16 /* HomeViewUseCase.swift in Sources */,
 				91E17AF029F8F0BA000CFA16 /* HomeViewController.swift in Sources */,
+				91E17B0029F8F511000CFA16 /* HomeView.swift in Sources */,
 				91E17AEC29F8F0BA000CFA16 /* AppDelegate.swift in Sources */,
+				91E17B1B29FA86CC000CFA16 /* CalculateTpyeModel.swift in Sources */,
 				91E17AEE29F8F0BA000CFA16 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,10 +389,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D96A3BCL3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YourssuCalculator/Info.plist;
+				INFOPLIST_FILE = YourssuCalculator/Global/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,10 +416,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D96A3BCL3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YourssuCalculator/Info.plist;
+				INFOPLIST_FILE = YourssuCalculator/Global/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91E17B0329F8F54A000CFA16 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91E17B0429F8F54A000CFA16 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91E17B0329F8F54A000CFA16 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91E17AE029F8F0BA000CFA16 /* Project object */;
 }
